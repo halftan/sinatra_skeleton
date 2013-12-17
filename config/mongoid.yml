@@ -1,0 +1,29 @@
+development:
+  sessions:
+    default:
+      database: _development
+      hosts:
+        - localhost:27017
+  options:
+    allow_dynamic_fields: false
+
+production:
+  sessions:
+    default:
+      database: _production
+      hosts:
+        - localhost:27017
+      # username: <%= ENV['MONGO_USERNAME'] %>
+      # password: <%= ENV['MONGO_PASSWORD'] %>
+  options:
+    allow_dynamic_fields: false
+    identity_map_enabled: true
+
+test:
+  sessions:
+    default:
+      database: _test
+      hosts:
+        - localhost:27017
+  options:
+    allow_dynamic_fields: false
