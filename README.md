@@ -1,5 +1,7 @@
 ## Sinatra Skeleton
 
+**Rename your project name in config/application.rb**
+
 ### How to build a development env
 ----------------
 
